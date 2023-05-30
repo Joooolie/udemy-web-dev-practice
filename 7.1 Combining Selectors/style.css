@@ -1,1 +1,27 @@
-/* Write your code here: */
+/*Grouping*/
+h1, h2 {
+    color: blueviolet;
+}
+
+/* parent > child */
+.box > p {
+    color: firebrick;
+}
+
+/*parent descendant*/
+.box li {
+    color: blue
+}
+
+/*Chainging Element.class#id
+ Always start with element 
+ No space between selectors*/
+li.done {
+    color: seagreen;
+}
+
+/* Combining Combination Selectors
+    descendent and chaining */
+ul p.done {
+    font-size: 0.5rem;
+}

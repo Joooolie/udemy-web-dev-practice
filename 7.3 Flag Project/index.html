@@ -5,7 +5,47 @@
   <meta charset="UTF-8">
   <title>CSS Flag Project</title>
   <style>
-    /* Write your CSS Code here */
+    .flag{
+      background-color: #ce1126;
+      height: 600px;
+      width: 900px;
+      position: relative;
+    } 
+
+    /*Blue Rectangle*/
+    .flag > div {
+      background-color: #002868;
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      top: 150px;
+    }
+
+    /*White Circle*/
+    .flag > div > div {
+      background-color: white;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      position: relative;
+      top: 50px;
+      left: 350px;
+
+    }
+
+    p {
+      margin: 0;
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    div > p {
+      color: white;
+    }
+
+    div > div > div > p {
+      color: black;
+    }
     
   </style>
 </head>
