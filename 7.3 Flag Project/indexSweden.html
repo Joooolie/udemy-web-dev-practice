@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    .blue-bgd{
+      background-color: #006aa8 ;
+      height: 600px;
+      width: 900px;
+      position: relative;
+      z-index: -1;
+    } 
+
+    .vertical-yellow {
+      background-color: #fecd00 ;
+      height: 100%;
+      width: 100px;
+      position: absolute;
+      top: 0;
+      left: 200px;
+      z-index: -1;
+    }
+
+    .horizontal-yellow {
+      background-color: #fecd00 ;
+      height: 100px;
+      width: 100%;
+      position: absolute;
+      top: 250px;
+      z-index: -1;
+    }
+
+    p {
+      margin: 0;
+      font-size: 5rem;
+      text-align: left;
+      color: black;
+      z-index: 10;
+    }
+
+    .text {
+      width: 600px;
+      margin: 0px 0px 0px 310px;
+    }
+
+    #flag {
+      color: white;
+    }
+
+    #of-sweden {
+      margin-top: 160px;
+    }
+    
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="blue-bgd">
+    <div class="text">
+      <p id="flag">The Flag</p>
+      <p id = "of-sweden">of Sweden</p>
+    </div>
+    
+    
+    <div class = "vertical-yellow"> </div>
+    
+    <div class = "horizontal-yellow">
+      
+    </div>
+    
+  </div>
+</body>
+
+</html>

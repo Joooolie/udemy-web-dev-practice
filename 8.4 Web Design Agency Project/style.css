@@ -6,8 +6,21 @@ body {
   flex-direction: column;
   min-height: 95vh;
 }
+<<<<<<< HEAD
 .main {
   flex: 1;
+=======
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0%;
+  column-gap: 10%;
+}
+.first {
+  grid-column: span 2;
+>>>>>>> a265ed5558bc44810b09394264026b1b9128314f
 }
 
 h1 {
@@ -19,3 +32,61 @@ footer {
   color: midnightblue;
 }
 
+<<<<<<< HEAD
+=======
+.tile-image {
+  /* display: inline-block; */
+  width: 300px;
+  float: left;
+  padding-right: 40px; 
+}
+
+span {
+  color: midnightblue;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+@media (max-width: 680px) {
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0%;
+    column-gap: 10%;
+    align-items: center;
+  }
+
+  .first {
+    grid-column: span 1;
+  }
+
+  .logo {
+    height: 1rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  h2, p {
+    clear: both;
+    
+  }
+
+  h2 {
+    padding-top: 10px;
+  }
+
+  .tile-image {
+    /* display: inline-block; */
+    width: 100%;
+
+    /* padding-right: 40px; */
+  }
+}
+>>>>>>> a265ed5558bc44810b09394264026b1b9128314f
