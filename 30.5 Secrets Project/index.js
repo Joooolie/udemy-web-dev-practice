@@ -1,6 +1,3 @@
-//To see how the final website should work, run "node solution.js".
-//Make sure you have installed all the dependencies with "npm i".
-//The password is ILoveProgramming
 import express from "express";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
@@ -17,12 +14,10 @@ app.get("/", (req, res) => {
 
 app.post("/check", (req, res) => {
   if (req.body.password == "ILoveProgramming") {
-    console.log("correct password!");
     res.sendFile(__dirname + "/public/secret.html");
   }
   else {
-    res.sendFile(__dirname + "/public/index.html");
-    console.log("wrong password!");
+    res.redirect("/");
   }
 });
 
