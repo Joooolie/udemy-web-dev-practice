@@ -17,9 +17,33 @@ app.get("/", (req, res) => {
 });
 
 app.post("/recipe", (req, res) => {
-  console.log(req.body.choice);
+  var parsedJSON = JSON.parse(recipeJSON);
+
+  var index;
+  switch (req.body.choice) {
+    case "chicken":
+      index = 0;
+      break;
+    case "beef":
+      index = 1;
+      break;
+    case "fish":
+      index = 2;
+    default:
+      break;
+  }
+
+  var allToppings = [];
+
+  parsedJSON[index].ingredients.toppings.forEach(topping => {
+    allToppings.push(topping.quantity + " of " + topping.name);
+  });
+
   res.render("index.ejs", {
-    protein : req.body.choice
+    title : parsedJSON[index].name,
+    protein : parsedJSON[index].ingredients.protein.name + ", " + parsedJSON[index].ingredients.protein.preparation, 
+    salsa : parsedJSON[index].ingredients.salsa.name,
+    toppings : allToppings
   });
   //Step 3: Write your code here to make this behave like the solution website.
   //Step 4: Add code to views/index.ejs to use the recieved recipe object.
